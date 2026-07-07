@@ -88,11 +88,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/et12alumno/MiIA/Backend/Backend.csproj",
+      "projectUniqueName": "/home/et12alumno/Lion-IA/Backend/Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "/home/et12alumno/MiIA/Backend/Backend.csproj",
+      "projectPath": "/home/et12alumno/Lion-IA/Backend/Backend.csproj",
       "packagesPath": "/home/et12alumno/.nuget/packages/",
-      "outputPath": "/home/et12alumno/MiIA/Backend/obj/",
+      "outputPath": "/home/et12alumno/Lion-IA/Backend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/et12alumno/.nuget/NuGet/NuGet.Config"
