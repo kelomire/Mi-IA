@@ -1,18 +1,26 @@
-using System.Net.Http;
 using System.Text;
 using System.Text.Json;
+using Backend.Configurations;
+using Microsoft.Extensions.Options;
 
 namespace Backend.Providers;
 
 public class OllamaProvider
 {
-    private readonly HttpClient _httpClient = new();
+    private readonly HttpClient _httpClient;
+    private readonly AIConfiguration _config;
+
+    public OllamaProvider(HttpClient httpClient, IOptions<AIConfiguration> options)
+    {
+        _httpClient = httpClient;
+        _config = options.Value;
+    }
 
     public async Task<string> PreguntarAsync(string pregunta)
     {
         var request = new
         {
-            model = "gemma3:1b",
+            model = _config.Model,
             prompt = pregunta,
             stream = false
         };
@@ -23,7 +31,7 @@ public class OllamaProvider
             "application/json");
 
         var response = await _httpClient.PostAsync(
-            "http://localhost:11434/api/generate",
+            $"{_config.Url}/api/generate",
             contenido);
 
         response.EnsureSuccessStatusCode();
@@ -33,7 +41,7 @@ public class OllamaProvider
         using var documento = JsonDocument.Parse(json);
 
         return documento.RootElement
-                        .GetProperty("response")
-                        .GetString() ?? "";
+            .GetProperty("response")
+            .GetString() ?? "";
     }
 }

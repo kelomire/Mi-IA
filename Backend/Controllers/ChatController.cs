@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Backend.Models;
 using Backend.Interfaces;
-using Backend.Services;
 
 namespace Backend.Controllers;
 
@@ -9,7 +8,12 @@ namespace Backend.Controllers;
 [Route("api/chat")]
 public class ChatController : ControllerBase
 {
-    private readonly IIAService _ia = new IAService();
+    private readonly IIAService _ia;
+
+    public ChatController(IIAService ia)
+    {
+        _ia = ia;
+    }
 
     [HttpPost]
     public async Task<IActionResult> Chat([FromBody] Mensaje mensaje)
