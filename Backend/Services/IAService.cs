@@ -7,8 +7,8 @@ public class IAService : IIAService
 {
     private readonly OllamaProvider _ollama = new();
 
-    public string Responder(string pregunta)
+    public async Task<string> ResponderAsync(string pregunta)
     {
-        return _ollama.Preguntar(pregunta);
+        return await _ollama.PreguntarAsync(pregunta);
     }
 }

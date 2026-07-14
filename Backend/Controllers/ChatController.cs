@@ -12,9 +12,9 @@ public class ChatController : ControllerBase
     private readonly IIAService _ia = new IAService();
 
     [HttpPost]
-    public IActionResult Chat([FromBody] Mensaje mensaje)
+    public async Task<IActionResult> Chat([FromBody] Mensaje mensaje)
     {
-        var respuesta = _ia.Responder(mensaje.Pregunta);
+        var respuesta = await _ia.ResponderAsync(mensaje.Pregunta);
 
         return Ok(new
         {

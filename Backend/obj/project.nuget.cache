@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GblDxhGp6ICMR8I2cUqgMFmlxgb2bYnv6aDzdkCpdMMcL5fGH7x04gbact4w5I5T+R7ai+ssOeqAD9E4WN6KcQ==",
+  "dgSpecHash": "2bPXcPK72jlJwrNfQEIzsMKvf7dnQT3IN/7WHiBVwqTPbtYL1qy7cCork8+H5RetufbIcuckkl9vZJr902I57Q==",
   "success": true,
   "projectFilePath": "/home/anderson/Documentos/GitHub/Mi-IA/Backend/Backend.csproj",
   "expectedPackageFiles": [
@@ -10,7 +10,10 @@
     "/home/anderson/.nuget/packages/swashbuckle.aspnetcore.swagger/10.2.3/swashbuckle.aspnetcore.swagger.10.2.3.nupkg.sha512",
     "/home/anderson/.nuget/packages/swashbuckle.aspnetcore.swaggergen/10.2.3/swashbuckle.aspnetcore.swaggergen.10.2.3.nupkg.sha512",
     "/home/anderson/.nuget/packages/swashbuckle.aspnetcore.swaggerui/10.2.3/swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512",
-    "/home/anderson/.nuget/packages/system.text.json/8.0.5/system.text.json.8.0.5.nupkg.sha512"
+    "/home/anderson/.nuget/packages/system.io.pipelines/10.0.9/system.io.pipelines.10.0.9.nupkg.sha512",
+    "/home/anderson/.nuget/packages/system.net.http.json/10.0.9/system.net.http.json.10.0.9.nupkg.sha512",
+    "/home/anderson/.nuget/packages/system.text.encodings.web/10.0.9/system.text.encodings.web.10.0.9.nupkg.sha512",
+    "/home/anderson/.nuget/packages/system.text.json/10.0.9/system.text.json.10.0.9.nupkg.sha512"
   ],
   "logs": []
 }
