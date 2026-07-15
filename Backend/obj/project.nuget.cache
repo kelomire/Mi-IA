@@ -1,22 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "HsEd4j5+ROI=",
+  "dgSpecHash": "2bPXcPK72jlJwrNfQEIzsMKvf7dnQT3IN/7WHiBVwqTPbtYL1qy7cCork8+H5RetufbIcuckkl9vZJr902I57Q==",
   "success": true,
-  "projectFilePath": "/home/et12alumno/Mi-IA/Backend/Backend.csproj",
+  "projectFilePath": "/home/anderson/Documentos/GitHub/Mi-IA/Backend/Backend.csproj",
   "expectedPackageFiles": [
-    "/home/et12alumno/.nuget/packages/microsoft.extensions.apidescription.server/8.0.0/microsoft.extensions.apidescription.server.8.0.0.nupkg.sha512",
-    "/home/et12alumno/.nuget/packages/microsoft.openapi/2.7.5/microsoft.openapi.2.7.5.nupkg.sha512",
-    "/home/et12alumno/.nuget/packages/swashbuckle.aspnetcore/10.2.3/swashbuckle.aspnetcore.10.2.3.nupkg.sha512",
-    "/home/et12alumno/.nuget/packages/swashbuckle.aspnetcore.swagger/10.2.3/swashbuckle.aspnetcore.swagger.10.2.3.nupkg.sha512",
-    "/home/et12alumno/.nuget/packages/swashbuckle.aspnetcore.swaggergen/10.2.3/swashbuckle.aspnetcore.swaggergen.10.2.3.nupkg.sha512",
-    "/home/et12alumno/.nuget/packages/swashbuckle.aspnetcore.swaggerui/10.2.3/swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512",
-    "/home/et12alumno/.nuget/packages/system.io.pipelines/10.0.9/system.io.pipelines.10.0.9.nupkg.sha512",
-    "/home/et12alumno/.nuget/packages/system.net.http.json/10.0.9/system.net.http.json.10.0.9.nupkg.sha512",
-    "/home/et12alumno/.nuget/packages/system.text.encodings.web/10.0.9/system.text.encodings.web.10.0.9.nupkg.sha512",
-    "/home/et12alumno/.nuget/packages/system.text.json/10.0.9/system.text.json.10.0.9.nupkg.sha512",
-    "/home/et12alumno/.nuget/packages/microsoft.netcore.app.ref/8.0.27/microsoft.netcore.app.ref.8.0.27.nupkg.sha512",
-    "/home/et12alumno/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.27/microsoft.aspnetcore.app.ref.8.0.27.nupkg.sha512",
-    "/home/et12alumno/.nuget/packages/microsoft.netcore.app.host.linux-x64/8.0.27/microsoft.netcore.app.host.linux-x64.8.0.27.nupkg.sha512"
+    "/home/anderson/.nuget/packages/microsoft.extensions.apidescription.server/8.0.0/microsoft.extensions.apidescription.server.8.0.0.nupkg.sha512",
+    "/home/anderson/.nuget/packages/microsoft.openapi/2.7.5/microsoft.openapi.2.7.5.nupkg.sha512",
+    "/home/anderson/.nuget/packages/swashbuckle.aspnetcore/10.2.3/swashbuckle.aspnetcore.10.2.3.nupkg.sha512",
+    "/home/anderson/.nuget/packages/swashbuckle.aspnetcore.swagger/10.2.3/swashbuckle.aspnetcore.swagger.10.2.3.nupkg.sha512",
+    "/home/anderson/.nuget/packages/swashbuckle.aspnetcore.swaggergen/10.2.3/swashbuckle.aspnetcore.swaggergen.10.2.3.nupkg.sha512",
+    "/home/anderson/.nuget/packages/swashbuckle.aspnetcore.swaggerui/10.2.3/swashbuckle.aspnetcore.swaggerui.10.2.3.nupkg.sha512",
+    "/home/anderson/.nuget/packages/system.io.pipelines/10.0.9/system.io.pipelines.10.0.9.nupkg.sha512",
+    "/home/anderson/.nuget/packages/system.net.http.json/10.0.9/system.net.http.json.10.0.9.nupkg.sha512",
+    "/home/anderson/.nuget/packages/system.text.encodings.web/10.0.9/system.text.encodings.web.10.0.9.nupkg.sha512",
+    "/home/anderson/.nuget/packages/system.text.json/10.0.9/system.text.json.10.0.9.nupkg.sha512"
   ],
   "logs": []
 }
