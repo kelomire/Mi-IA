@@ -11,6 +11,9 @@ builder.Services.Configure<AIConfiguration>(
 
 // Servicios
 builder.Services.AddHttpClient<OllamaProvider>();
+
+builder.Services.AddSingleton<PromptService>();
+
 builder.Services.AddScoped<IIAService, IAService>();
 
 builder.Services.AddControllers();
