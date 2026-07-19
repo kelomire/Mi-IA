@@ -1,15 +1,26 @@
+using Backend.Configurations;
+using Microsoft.Extensions.Options;
+
 namespace Backend.Services;
 
 public class PromptService
 {
-    private readonly string _ruta =
-        Path.Combine(AppContext.BaseDirectory, "Prompts", "SystemPrompt.txt");
+    private readonly AIConfiguration _config;
+
+    public PromptService(IOptions<AIConfiguration> options)
+    {
+        _config = options.Value;
+    }
 
     public string ObtenerPrompt()
     {
-        if (!File.Exists(_ruta))
+        var ruta = Path.Combine(
+            AppContext.BaseDirectory,
+            _config.SystemPrompt);
+
+        if (!File.Exists(ruta))
             return "";
 
-        return File.ReadAllText(_ruta);
+        return File.ReadAllText(ruta);
     }
 }

@@ -22,7 +22,11 @@ public class OllamaProvider
         {
             model = _config.Model,
             prompt = pregunta,
-            stream = false
+            stream = false,
+            options = new
+            {
+                temperature = _config.Temperature
+            }
         };
 
         var contenido = new StringContent(

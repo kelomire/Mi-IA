@@ -11,4 +11,10 @@
     <PackageReference Include="System.Net.Http.Json" Version="10.0.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Prompts/SystemPrompt.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
