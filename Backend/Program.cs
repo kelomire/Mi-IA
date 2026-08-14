@@ -2,8 +2,11 @@ using Backend.Interfaces;
 using Backend.Services;
 using Backend.Providers;
 using Backend.Configurations;
+using Backend.Memory;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSingleton<MemoriaService>();
 
 // Configuración
 builder.Services.Configure<AIConfiguration>(
