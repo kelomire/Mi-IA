@@ -3,21 +3,24 @@ using Backend.Services;
 using Backend.Providers;
 using Backend.Configurations;
 using Backend.Memory;
+using Backend.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<MemoriaService>();
 
-// Configuración
 builder.Services.Configure<AIConfiguration>(
     builder.Configuration.GetSection("AI"));
 
-// Servicios
 builder.Services.AddHttpClient<OllamaProvider>();
 
 builder.Services.AddSingleton<PromptService>();
 
 builder.Services.AddScoped<IIAService, IAService>();
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite("Data Source=lionia.db"));
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
