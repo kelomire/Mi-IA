@@ -21,9 +21,9 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<Mensaje>()
             .HasKey(m => m.Id);
 
-        modelBuilder.Entity<Mensaje>()
-            .HasOne<Conversacion>()
-            .WithMany()
+        modelBuilder.Entity<Conversacion>()
+            .HasMany(c => c.Mensajes)
+            .WithOne()
             .HasForeignKey(m => m.ConversacionId)
             .OnDelete(DeleteBehavior.Cascade);
     }

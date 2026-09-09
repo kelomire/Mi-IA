@@ -20,25 +20,30 @@ public class IAService : IIAService
         _memoria = memoria;
     }
 
-    public async Task<string> ResponderAsync(string pregunta)
+    public async Task<string> ResponderAsync(
+        string pregunta,
+        string historial = "")
     {
         var promptSistema = _promptService.ObtenerPrompt();
 
-        _memoria.Agregar("Usuario", pregunta);
+        var historialCompleto = string.IsNullOrWhiteSpace(historial)
+            ? _memoria.ObtenerHistorial()
+            : historial;
 
         var promptCompleto =
 $"""
 {promptSistema}
 
-Conversación:
-{_memoria.ObtenerHistorial()}
+Conversación anterior:
+{historialCompleto}
 
-Mi-IA:
+Usuario:
+{pregunta}
+
+Lion-IA:
 """;
 
         var respuesta = await _ollama.PreguntarAsync(promptCompleto);
-
-        _memoria.Agregar("Mi-IA", respuesta);
 
         return respuesta;
     }

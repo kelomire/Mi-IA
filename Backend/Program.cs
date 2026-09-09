@@ -28,6 +28,13 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// Crear la base de datos si no existe
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    db.Database.EnsureCreated();
+}
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
