@@ -13,6 +13,7 @@ public class OllamaProvider
     public OllamaProvider(HttpClient httpClient, IOptions<AIConfiguration> options)
     {
         _httpClient = httpClient;
+        _httpClient.Timeout = TimeSpan.FromMinutes(5);
         _config = options.Value;
     }
 
